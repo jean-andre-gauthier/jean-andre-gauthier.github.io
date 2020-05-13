@@ -4,7 +4,7 @@ title:  "Find the kth largest element from a 2-d sorted array"
 date:   2017-04-07 00:00:00 +0200
 categories: algorithms
 ---
-Finding the kth smallest element in a sorted array is trivial, but the problem becomes much trickier when extended to a sorted matrix. In this article, we'll present an algorithm that runs in linear time with respect to the number of items in the matrix.
+Finding the kth smallest element in a sorted array is trivial, but the problem becomes much trickier when extended to a sorted matrix. In this post, I'll present an algorithm that runs in linear time with respect to the number of items in the matrix.
 
 A while back I came across [an interesting question](https://stackoverflow.com/questions/5940420/find-kth-largest-element-from-a-2-d-sorted-array/27194814#27194814) asked by a StackOverflow user: "I have a 2 dimensional array. The rows and columns are sorted. How to find the kth largest element from the 2-d array?" Unsatisfied by the answers that had been given, I did a bit of research and realised that the problem could be solved in linear time. As a reference, here is the answer I gave to the question:
 

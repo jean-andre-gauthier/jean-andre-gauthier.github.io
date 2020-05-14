@@ -34,7 +34,7 @@ The authors of [Selection In X+Y and Matrices with Sorted Rows and Columns][1] o
 
 For the general case of a matrix with duplicates, one could tag the matrix' elements with the row and column numbers.
 
-Happy hacking!
+Happy hacking :)
 
 [1]: http://www.cse.yorku.ca/~andy/pubs/X%2BY.pdf
 [2]: http://www.chaoxuprime.com/posts/2014-04-02-selection-in-a-sorted-matrix.html

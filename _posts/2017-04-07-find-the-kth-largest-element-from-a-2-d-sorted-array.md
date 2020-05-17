@@ -18,13 +18,13 @@ The authors of [Selection In X+Y and Matrices with Sorted Rows and Columns][1] o
 
 **Proof**: Taking `f(i) = min j s.t. M(i,j) >= e`, we can state that
 
-<pre><code>
+```
     rank(M,e) = sum i=1 to n of f(i)
     rank(N,e) = sum i=1 to n of ceil(f(i)/2) <= rank(M,e)/2 + n
     => 2*rank(N,e) - 2n <= rank(M,e)
     rank(N,e) > sum i=1 to n of f(i)/2
     => rank(M,e) <= 2*rank(N,e)
-</code></pre>
+```
 
 **Conquer**: In other words, if we are to find an element with rank k in M, we would only have to look into in the submatrix P of M that is bounded by elements a and b such that `rank(N,a) = floor(k/2)` and `rank(N,b) = ceil(k/2) + n`. How many elements are in this submatrix? By the previous inequality and the assumption that there are no duplicates, so at most O(n). Therefore we just have to select the `k - rank(N,a)` th element in P, and this can be done by rearranging P into a sorted array in O(m), and then running a linear-time algorithm such as quickselect to find the actual element. `rank(M,a)` can be computed in O(m), starting from the smallest element in the matrix and iterating over the columns until an element larger than a is found, and then going to the next line and going to the previous column until we find the first element to be larger than a, etc. The conquer part thus runs in O(m).
 

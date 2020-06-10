@@ -4,6 +4,7 @@ title:  "FindSong: A simple yet powerful audio search engine"
 date:   2020-06-02 00:00:00 +0200
 categories: algorithms signal-processing scala
 mathjax: true
+published: false
 ---
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
